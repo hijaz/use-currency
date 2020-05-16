@@ -14,15 +14,27 @@ npm install --save use-currency
 
 ```jsx
 import React, { Component } from 'react'
-
-import { useMyHook } from 'use-currency'
+import {useCurrency} from 'use-currency'
 
 const Example = () => {
-  const example = useMyHook()
+  const inputRef = useRef()
+  const initialValue = "123456"
+  const [currency, setCurrency, handleKeyDown] = useCurrency(
+    initialValue,
+    inputRef
+  );
   return (
-    <div>{example}</div>
+    <input
+      type="text"
+      ref={inputRef}
+      onKeyDown={handleKeyDown}
+      onChange={setCurrency}
+      value={currency}
+    ></input>
   )
 }
+
+![](https://www.hassanijaz.com/downloads/use-currency.gif)
 ```
 
 ## License
