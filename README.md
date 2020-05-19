@@ -15,7 +15,7 @@ npm install --save use-currency
 ## Usage
 
 ```jsx
-import React from 'react'
+import React, { useRef } from 'react'
 import { useCurrency } from 'use-currency'
 
 const Example = () => {
