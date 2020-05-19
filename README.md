@@ -15,16 +15,14 @@ npm install --save use-currency
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-import {useCurrency} from 'use-currency'
+import React from 'react'
+import { useCurrency } from 'use-currency'
 
 const Example = () => {
   const inputRef = useRef()
   const initialValue = "123456"
-  const [currency, setCurrency, handleKeyDown] = useCurrency(
-    initialValue,
-    inputRef
-  );
+  const [currency, setCurrency, handleKeyDown] = useCurrency(initialValue, inputRef)
+
   return (
     <input
       type="text"
@@ -32,7 +30,7 @@ const Example = () => {
       onKeyDown={handleKeyDown}
       onChange={setCurrency}
       value={currency}
-    ></input>
+    />
   )
 }
 ```
