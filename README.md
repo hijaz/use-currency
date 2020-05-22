@@ -4,7 +4,7 @@
 
 [![NPM](https://img.shields.io/npm/v/use-currency.svg)](https://www.npmjs.com/package/use-currency) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-![](/use-currency.gif)
+![](https://www.hassanijaz.com/downloads/use-currency.gif)
 
 ## Install
 
